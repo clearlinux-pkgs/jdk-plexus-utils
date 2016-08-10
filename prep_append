@@ -1,0 +1,19 @@
+
+python3 /usr/share/java-utils/mvn_file.py : plexus/utils
+python3 /usr/share/java-utils/mvn_alias.py : plexus:plexus-utils
+
+# Generate OSGI info
+python3 /usr/share/java-utils/pom_editor.py pom_xpath_inject   "pom:project" "<packaging>bundle</packaging>"
+python3 /usr/share/java-utils/pom_editor.py pom_xpath_inject   "pom:build/pom:plugins" "
+
+        <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-bundle-plugin</artifactId>
+          <extensions>true</extensions>
+          <configuration>
+            <instructions>
+              <_nouses>true</_nouses>
+              <Export-Package>org.codehaus.plexus.util.*;org.codehaus.plexus.util.cli.*;org.codehaus.plexus.util.cli.shell.*;org.codehaus.plexus.util.dag.*;org.codehaus.plexus.util.introspection.*;org.codehaus.plexus.util.io.*;org.codehaus.plexus.util.reflection.*;org.codehaus.plexus.util.xml.*;org.codehaus.plexus.util.xml.pull.*</Export-Package>
+            </instructions>
+          </configuration>
+        </plugin>"
