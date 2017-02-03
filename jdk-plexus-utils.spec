@@ -4,7 +4,7 @@
 #
 Name     : jdk-plexus-utils
 Version  : 3.0.24
-Release  : 3
+Release  : 4
 URL      : https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.0.24.tar.gz
 Source0  : https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.0.24.tar.gz
 Summary  : No detailed summary available
@@ -21,6 +21,7 @@ BuildRequires : jdk-aqute-bndlib
 BuildRequires : jdk-atinject
 BuildRequires : jdk-bsh
 BuildRequires : jdk-cdi-api
+BuildRequires : jdk-cglib
 BuildRequires : jdk-commons-beanutils
 BuildRequires : jdk-commons-cli
 BuildRequires : jdk-commons-codec
@@ -31,9 +32,11 @@ BuildRequires : jdk-commons-io
 BuildRequires : jdk-commons-lang
 BuildRequires : jdk-commons-lang3
 BuildRequires : jdk-commons-logging
+BuildRequires : jdk-commons-parent
 BuildRequires : jdk-commons-validator
 BuildRequires : jdk-doxia
 BuildRequires : jdk-doxia-sitetools
+BuildRequires : jdk-easymock3
 BuildRequires : jdk-eclipse-eclipse
 BuildRequires : jdk-eclipse-osgi
 BuildRequires : jdk-eclipse-osgi-services
@@ -69,6 +72,7 @@ BuildRequires : jdk-maven-resources-plugin
 BuildRequires : jdk-maven-shared-incremental
 BuildRequires : jdk-maven-shared-utils
 BuildRequires : jdk-objectweb-asm
+BuildRequires : jdk-objenesis
 BuildRequires : jdk-osgi-compendium
 BuildRequires : jdk-osgi-core
 BuildRequires : jdk-plexus
@@ -87,12 +91,13 @@ BuildRequires : jdk-plexus-utils
 BuildRequires : jdk-plexus-velocity
 BuildRequires : jdk-sisu
 BuildRequires : jdk-slf4j
-BuildRequires : jdk-snappy-java
+BuildRequires : jdk-snappy
 BuildRequires : jdk-surefire
 BuildRequires : jdk-velocity
 BuildRequires : jdk-wagon
 BuildRequires : jdk-xbean
 BuildRequires : jdk-xmlunit
+BuildRequires : jdk-xz
 BuildRequires : lxml
 BuildRequires : openjdk-dev
 BuildRequires : python3
