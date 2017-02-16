@@ -4,7 +4,7 @@
 #
 Name     : jdk-plexus-utils
 Version  : 3.0.24
-Release  : 5
+Release  : 6
 URL      : https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.0.24.tar.gz
 Source0  : https://github.com/codehaus-plexus/plexus-utils/archive/plexus-utils-3.0.24.tar.gz
 Summary  : No detailed summary available
